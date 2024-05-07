@@ -1,0 +1,6 @@
+###### Requirements without Version Specifiers ######
+
+
+###### Requirements with Version Specifiers ######
+pygame >= 1.9.6            			# pygame for display, minimum version 1.9.6
+adafruit-circuitpython-ads1x15 >= 2.2.2		# controller library for the adc, minimum version 2.2.2

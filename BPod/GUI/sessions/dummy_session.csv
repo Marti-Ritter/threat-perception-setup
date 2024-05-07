@@ -1,0 +1,86 @@
+__UUID4__;72c9cea1-4e1b-4f7a-96e5-cb51d5e1e58b
+__CREATED-ON__;2020-07-30 10:03:31.917755
+__DEF-URL__;http://pybpod-api.readthedocs.org
+__DEF-TEXT__;This file contains data recorded during a session from the PyBpod system
+__SOFTWARE__;PyBpod API v1.8.2
+__HAS-HEADER__
+TYPE;PC-TIME;BPOD-INITIAL-TIME;BPOD-FINAL-TIME;MSG;+INFO
+INFO;2020-07-30 10:03:31.918063;;;SERIAL-PORT;/dev/ttyACM0
+INFO;2020-07-30 10:03:31.918257;;;PROTOCOL-NAME;
+INFO;2020-07-30 10:03:31.918302;;;CREATOR-NAME;
+INFO;2020-07-30 10:03:31.918345;;;PROJECT-NAME;
+INFO;2020-07-30 10:03:31.918389;;;EXPERIMENT-NAME;
+INFO;2020-07-30 10:03:31.918428;;;BOARD-NAME;
+INFO;2020-07-30 10:03:31.918468;;;SETUP-NAME;
+INFO;2020-07-30 10:03:31.918513;;;BPOD-GUI-VERSION;
+stderr;2020-07-30 10:03:31.928733;;|Process Process-1:
+|;;
+stderr;2020-07-30 10:03:31.993811;;|Traceback (most recent call last):
+|;;
+stderr;2020-07-30 10:03:31.993870;;;;
+stderr;2020-07-30 10:03:31.993895;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR || os.O_NOCTTY || os.O_NONBLOCK)
+|;;
+stderr;2020-07-30 10:03:31.993922;;;;
+stderr;2020-07-30 10:03:31.993948;;|FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
+|;;
+stderr;2020-07-30 10:03:31.993962;;;;
+stderr;2020-07-30 10:03:31.993978;;|
+During handling of the above exception, another exception occurred:
+
+|;;
+stderr;2020-07-30 10:03:31.993995;;;;
+stderr;2020-07-30 10:03:31.994006;;|Traceback (most recent call last):
+|;;
+stderr;2020-07-30 10:03:31.994017;;;;
+stderr;2020-07-30 10:03:31.994049;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+|;;
+stderr;2020-07-30 10:03:31.994067;;;;
+stderr;2020-07-30 10:03:31.994079;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+|;;
+stderr;2020-07-30 10:03:31.994096;;;;
+stderr;2020-07-30 10:03:31.994108;;|  File "/home/lukas/bpod/TPM/GUI/src/tpm_bpod_script.py", line 196, in run_multiple_trials
+    pod = open(flags)
+|;;
+stderr;2020-07-30 10:03:31.994120;;;;
+stderr;2020-07-30 10:03:31.994134;;|  File "/home/lukas/bpod/TPM/GUI/src/tpm_bpod_script.py", line 182, in open
+    pod = Bpod()
+|;;
+stderr;2020-07-30 10:03:31.994146;;;;
+stderr;2020-07-30 10:03:31.994156;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/pybpodapi/bpod/bpod_io.py", line 27, in __init__
+    super(BpodIO, self).__init__(serial_port, sync_channel, sync_mode)
+|;;
+stderr;2020-07-30 10:03:31.994169;;;;
+stderr;2020-07-30 10:03:31.994179;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/pybpodapi/bpod/bpod_com_protocol.py", line 43, in __init__
+    self.open()
+|;;
+stderr;2020-07-30 10:03:31.994193;;;;
+stderr;2020-07-30 10:03:31.994204;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/pybpodapi/bpod/bpod_com_protocol.py", line 46, in open
+    super(BpodCOMProtocol, self).open()
+|;;
+stderr;2020-07-30 10:03:31.994216;;;;
+stderr;2020-07-30 10:03:31.994226;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/pybpodapi/bpod/bpod_base.py", line 134, in open
+    self._bpodcom_connect(self.serial_port, self.baudrate)
+|;;
+stderr;2020-07-30 10:03:31.994239;;;;
+stderr;2020-07-30 10:03:31.994249;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/pybpodapi/bpod/bpod_com_protocol.py", line 97, in _bpodcom_connect
+    self._arcom = ArCOM().open(serial_port, baudrate, timeout)
+|;;
+stderr;2020-07-30 10:03:31.994262;;;;
+stderr;2020-07-30 10:03:31.994273;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/pybpodapi/com/arcom.py", line 97, in open
+    serial_port, baudrate=baudrate, timeout=timeout
+|;;
+stderr;2020-07-30 10:03:31.994287;;;;
+stderr;2020-07-30 10:03:31.994297;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+|;;
+stderr;2020-07-30 10:03:31.994309;;;;
+stderr;2020-07-30 10:03:31.994319;;|  File "/home/lukas/anaconda3/envs/bpod_3/lib/python3.7/site-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+|;;
+stderr;2020-07-30 10:03:31.994338;;;;
+stderr;2020-07-30 10:03:31.994354;;|serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+|;;
+stderr;2020-07-30 10:03:31.994367;;;;

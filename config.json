@@ -1,0 +1,92 @@
+{
+    "mice": {
+        "MLA-000001": {
+            "performance": {
+                "02.01.2019": 100,
+                "01.01.2019": 1
+            },
+            "pairing_duration": {
+                "02.01.2019": 200,
+                "01.01.2019": 400
+            },
+            "name": "Test-Mouse",
+            "weight": 100,
+            "dob": "2019-01-01"
+        },
+        "aaaaa": {
+            "name": "aaaaa",
+            "dob": "1990-01-08",
+            "weight": 112,
+            "performance": {},
+            "pairing_duration": {}
+        }
+    },
+    "rats": {
+        "MLA-000002": {
+            "pairing_duration": {
+                "02.01.2019": 2000,
+                "01.01.2019": 400
+            },
+            "name": "Test-Rat",
+            "weight": 9001,
+            "dob": "2019-12-31"
+        }
+    },
+    "settings": {
+        "advanced": {
+            "message_duration": 2,
+            "font_name": "FreeSans",
+            "acceleration_cutoff": 0.5,
+            "marker_height": 200,
+            "reward_abort": 0.9
+        },
+        "hardware": {
+            "disk_out": 18,
+            "tube_out": 13,
+            "rat_lick_in": 22,
+            "rat_lick_out": 23,
+            "mouse_lick_in": 9,
+            "mouse_lick_out": 25
+        },
+        "experiment": {
+            "reward_length": 3,
+            "rel_prob_opened": 1,
+            "rel_prob_smell": 1,
+            "rel_prob_blocked": 1,
+            "rel_prob_visual": 1,
+            "speed_multiplier": 1.0,
+            "trial_number": 100,
+            "inter_trial_length": 3,
+            "trial_length": 14,
+            "reward_timer_rat": 10
+        },
+        "pairing_mouse": {
+            "rel_prob_opened": 1,
+            "rel_prob_smell": 1,
+            "rel_prob_blocked": 1,
+            "rel_prob_visual": 1,
+            "speed_multiplier": 1.0,
+            "trial_number": 100,
+            "inter_trial_length": 3,
+            "trial_length": 14
+        },
+        "pairing_rat": {
+            "rel_prob_opened": 1,
+            "rel_prob_smell": 1,
+            "rel_prob_blocked": 1,
+            "rel_prob_visual": 1,
+            "speed_multiplier": 1.0,
+            "trial_number": 100,
+            "inter_trial_length": 3,
+            "trial_length": 14,
+            "reward_timer": 10
+        },
+        "setup": {
+            "p_cm_ratio": 32.2,
+            "tube_distance": 30.0,
+            "wheel_diameter": 20.0,
+            "main_screen_direction_left": true,
+	    "experiment_screen_right": true
+        }
+    }
+}
